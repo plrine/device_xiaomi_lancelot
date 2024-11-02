@@ -13,6 +13,9 @@ $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Helio G80" \
+    RISING_MAINTAINER="rktdnt."
 
 PRODUCT_NAME := lineage_lancelot
 PRODUCT_DEVICE := lancelot
